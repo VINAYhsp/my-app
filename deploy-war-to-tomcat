@@ -20,5 +20,6 @@ node{
        message: 'welcome all.... to jenkins',
        tokenCredentialId: 'slack-demo',
        username: 'HALAGUR
+   }
 
 }
