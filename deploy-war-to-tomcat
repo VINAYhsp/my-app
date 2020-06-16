@@ -13,13 +13,6 @@ node{
         sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@172.31.60.12:/opt/tomcat8/webapps/'
       }
    }
-   stage('Slack Notification'){
-       slackSend baseUrl: 'https://hooks.slack.com/services/',
-       channel: '#jenkins',
-       color: 'good',
-       message: 'welcome all.... to jenkins',
-       tokenCredentialId: 'slack-demo',
-       username: 'HALAGUR
-   }
+   
 
 }
